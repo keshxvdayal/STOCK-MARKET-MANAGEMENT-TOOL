@@ -46,7 +46,7 @@ export function Card({ symbol = "stock", closingPrices = [] }) {
 }
 
 let intervalId1, intervalId2, intervalId3;
-const base = "http://127.0.0.1:8082" //"http://127.0.0.1:8082";
+const base = "https://many-bars-chew.loca.lt" //"http://127.0.0.1:8082";
 const StockViewer = () => {
   const [stocksData, setStocksData] = useState([]);
   const [timeList, setTimeList] = useState([]);
