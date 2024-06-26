@@ -1,0 +1,186 @@
+/* Webpixels CSS */
+/* Utility and component-centric Design System based on Bootstrap for fast, responsive UI development */
+/* URL: https://github.com/webpixels/css */
+
+@import url(https://unpkg.com/@webpixels/css@1.1.5/dist/index.css);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App.css */
+
+/* General styles for the entire app */
+
+  
+  .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Custom card styles */
+  .card {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .card .text-lg {
+    font-size: 1.25rem;
+  }
+  
+  .card .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Custom table styles */
+  .table-responsive {
+    padding: 20px;
+  }
+  
+  /* Custom button styles */
+  .btn-primary {
+    background-color: #8800ff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #00070f;
+  }
+  
+  /* Slick slider custom styles */
+  .slick-prev:before, .slick-next:before {
+    color: #8800ff;
+    padding: 10px;
+    background-color: #8800ff;
+    border-radius: 50%;
+    transition: 0.2s;
+    margin: 0;
+  }
+  .slick-prev:before:hover, .slick-next:before:hover{
+    background-color: #000000;
+  }
+  
+  .slick-dots li button:before {
+    color: #8800ff;
+    background-color: #000000;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  .slick-dots:hover li:hover button:before:hover{
+    background-color: #8800ff;
+  }
+
+  .table_data{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:500;
+  }
+  .stocks{
+    background-color: #8800ff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 15px;
+    }
+  
+    .d-flex {
+      flex-direction: column;
+    }
+  
+    .d-flex .me-3 {
+      margin-bottom: 15px;
+    }
+  
+    .d-flex .btn {
+      margin-bottom: 15px;
+    }
+  }
+  
+
+
+  /* App.css */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  
+  border-radius: 100px;
+}
+.table thead tr > th:first-child {
+  border: none;
+  border-top-left-radius: 9px;
+}
+.table thead tr > th:last-child {
+  border: none;
+  border-top-right-radius: 9px;
+}
+.table thead {
+}
+
+.table thead tr {
+  background-color: #8800ff;
+  color: #ffffff;
+  text-align: left;
+}
+
+.table tbody tr{
+  transition: 0.3s ease;
+}
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  color: rgb(0, 0, 0);
+  
+}
+
+
+.table tbody tr:hover {
+  /* background-color: #f1f1f1; */
+  background-color: #7944ff9e;
+  color: white;
+}
+
+.table .font-bolder {
+  font-weight: bold;
+}
+
+.table .text-md {
+  font-size: 16px;
+}
+
+.table .text-sm {
+  font-size: 14px;
+}
+
+.table .text-slate-400 {
+  color: #718096;
+}
+
+.table .p-1 {
+  padding: 8px;
+}
+
+.table .p-2 {
+  padding: 16px;
+}
+
+.h-4 {
+  height: 16px;
+}
+
